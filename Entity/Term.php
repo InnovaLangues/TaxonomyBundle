@@ -1,6 +1,6 @@
 <?php
 
-namespace Claroline\TaxonomyBundle\Entity;
+namespace Innova\TaxonomyBundle\Entity;
 
 use Gedmo\Mapping\Annotation as Gedmo;
 use Doctrine\ORM\Mapping as ORM;
