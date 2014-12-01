@@ -284,11 +284,11 @@ class Term
     /**
      * Set parent
      *
-     * @param \Claroline\TaxonomyBundle\Entity\Term $parent
+     * @param \Innova\TaxonomyBundle\Entity\Term $parent
      *
      * @return Term
      */
-    public function setParent(\Claroline\TaxonomyBundle\Entity\Term $parent = null)
+    public function setParent(\Innova\TaxonomyBundle\Entity\Term $parent = null)
     {
         $this->parent = $parent;
 
@@ -298,7 +298,7 @@ class Term
     /**
      * Get parent
      *
-     * @return \Claroline\TaxonomyBundle\Entity\Term
+     * @return \Innova\TaxonomyBundle\Entity\Term
      */
     public function getParent()
     {
@@ -308,11 +308,11 @@ class Term
     /**
      * Add children
      *
-     * @param \Claroline\TaxonomyBundle\Entity\Term $children
+     * @param \Innova\TaxonomyBundle\Entity\Term $children
      *
      * @return Term
      */
-    public function addChild(\Claroline\TaxonomyBundle\Entity\Term $children)
+    public function addChild(\Innova\TaxonomyBundle\Entity\Term $children)
     {
         $this->children[] = $children;
 
@@ -322,9 +322,9 @@ class Term
     /**
      * Remove children
      *
-     * @param \Claroline\TaxonomyBundle\Entity\Term $children
+     * @param \Innova\TaxonomyBundle\Entity\Term $children
      */
-    public function removeChild(\Claroline\TaxonomyBundle\Entity\Term $children)
+    public function removeChild(\Innova\TaxonomyBundle\Entity\Term $children)
     {
         $this->children->removeElement($children);
     }
@@ -388,10 +388,10 @@ class Term
     /**
      * Set vocabulary
      *
-     * @param  \Claroline\TaxonomyBundle\Entity\Vocabulary $vocabulary
+     * @param  \Innova\TaxonomyBundle\Entity\Vocabulary $vocabulary
      * @return Term
      */
-    public function setVocabulary(\Claroline\TaxonomyBundle\Entity\Vocabulary $vocabulary = null)
+    public function setVocabulary(\Innova\TaxonomyBundle\Entity\Vocabulary $vocabulary = null)
     {
         $this->vocabulary = $vocabulary;
 
@@ -401,43 +401,10 @@ class Term
     /**
      * Get vocabulary
      *
-     * @return \Claroline\TaxonomyBundle\Entity\Vocabulary
+     * @return \Innova\TaxonomyBundle\Entity\Vocabulary
      */
     public function getVocabulary()
     {
         return $this->vocabulary;
-    }
-
-    /**
-     * Add abstractRessources
-     *
-     * @param  \Claroline\LearningPathBundle\Entity\AbstractRessource $abstractRessources
-     * @return Term
-     */
-    public function addAbstractRessource(\Claroline\LearningPathBundle\Entity\AbstractRessource $abstractRessources)
-    {
-        $this->abstractRessources[] = $abstractRessources;
-
-        return $this;
-    }
-
-    /**
-     * Remove abstractRessources
-     *
-     * @param \Claroline\LearningPathBundle\Entity\AbstractRessource $abstractRessources
-     */
-    public function removeAbstractRessource(\Claroline\LearningPathBundle\Entity\AbstractRessource $abstractRessources)
-    {
-        $this->abstractRessources->removeElement($abstractRessources);
-    }
-
-    /**
-     * Get abstractRessources
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getAbstractRessources()
-    {
-        return $this->abstractRessources;
     }
 }
