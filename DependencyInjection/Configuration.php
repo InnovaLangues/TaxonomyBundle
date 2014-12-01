@@ -1,6 +1,6 @@
 <?php
 
-namespace Claroline\TaxonomyBundle\DependencyInjection;
+namespace Innova\TaxonomyBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
