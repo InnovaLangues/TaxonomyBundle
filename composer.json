@@ -1,5 +1,5 @@
 {
-    "name": "claroline/taxonomy-bundle",
+    "name": "innova/taxonomy-bundle",
     "description": "Claroline taxonomy bundle",
     "keywords": ["Claroline","Taxonomy"],
     "homepage": "http://www.claroline.net",
@@ -18,8 +18,8 @@
         "claroline/kernel-bundle": "dev-master"
     },
     "autoload": {
-        "psr-0": { "Claroline\\TaxonomyBundle": "" }
+        "psr-0": { "Innova\\TaxonomyBundle": "" }
     },
-    "target-dir": "Claroline/TaxonomyBundle",
+    "target-dir": "Innova/TaxonomyBundle",
     "minimum-stability": "dev"
 }
