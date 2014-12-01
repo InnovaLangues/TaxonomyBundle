@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Vocabulary
  *
- * @ORM\Table(name="claro_vocabulary")
+ * @ORM\Table(name="innova_vocabulary")
  * @ORM\Entity
  */
 class Vocabulary
@@ -199,7 +199,7 @@ class Vocabulary
     /**
      * Add terms
      *
-     * @param  \Claroline\TaxonomyBundle\Entity\Term $terms
+     * @param  \Innova\TaxonomyBundle\Entity\Term $terms
      * @return Vocabulary
      */
     public function addTerm(\Claroline\TaxonomyBundle\Entity\Term $terms)
@@ -212,9 +212,9 @@ class Vocabulary
     /**
      * Remove terms
      *
-     * @param \Claroline\TaxonomyBundle\Entity\Term $terms
+     * @param \Innova\TaxonomyBundle\Entity\Term $terms
      */
-    public function removeTerm(\Claroline\TaxonomyBundle\Entity\Term $terms)
+    public function removeTerm(\Innova\TaxonomyBundle\Entity\Term $terms)
     {
         $this->terms->removeElement($terms);
     }
